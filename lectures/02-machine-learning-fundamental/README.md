@@ -296,8 +296,7 @@ Rumus:
   <img src="https://latex.codecogs.com/svg.latex?d(x%2Cy)%20%3D%20%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5En(x_i-y_i)%5E2%7D" />
 </p>
 
-**Keterangan:**
-
+Keterangan:
 - $d(x,y)$ : Jarak antara dua data.
 - $x_i$ : Nilai fitur data pertama.
 - $y_i$ : Nilai fitur data kedua.
