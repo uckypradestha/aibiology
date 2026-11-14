@@ -122,7 +122,7 @@ Kegiatan pembelajaran dilaksanakan melalui beberapa pendekatan:
 
 ## Topik Mata Kuliah
 - Pertemuan 11: [Introduction to AI in Biology](lectures/01-introduction-ai-in-biology/)
-- Pertemuan 12: Machine Learning Fundamental
+- Pertemuan 12: [Machine Learning Fundamental](lectures/02-machine-learning-fundamental/)
 - Pertemuan 13: Deep Learning Basic
 - Pertemuan 14: Computer Vision in Biology
 - Pertemuan 15: Etika dan Tantangan Penerapan AI di Biology
