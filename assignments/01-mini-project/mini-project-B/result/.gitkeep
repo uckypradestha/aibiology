@@ -1,0 +1,29 @@
+NAMA : CINDY AULIA EKA PUTRI
+NIM  : B1C024059
+kELAS: BIOLOGI TERAPAN B
+
+1. Ringkasan Metodologi dan Alur Kode
+Dataset: Terdiri atas 569 sampel data pasien dengan 30 fitur numerik bersih (tanpa missing values) yang terbagi ke dalam dua kelas target: malignant (tumor ganas, 212 sampel) dan benign (tumor jinak, 357 sampel).
+Preprocessing dan Pembagian Data: Fitur dinormalisasi menggunakan StandardScaler di dalam pipeline untuk mencegah kebocoran data (data leakage). Pada skenario komparasi utama, dataset dibagi secara terstratifikasi menjadi 70% data latih (398 sampel) dan 30% data uji (171 sampel).
+Model yang Dibandingkan: Logistic Regression (max_iter=1000) dibandingkan secara langsung dengan Random Forest Classifier (parameter bawaan pustaka) pada data uji yang sama.
+2. Ringkasan Perbandingan Performa dan Confusion Matrix
+Indikator Evaluasi (171 Sampel Uji)
+Logistic Regression
+Random Forest Classifier
+ 
+Accuracy Keseluruhan
+98,83% (169 benar, 2 salah)
+93,57% (160 benar, 11 salah)
+Metrik Kelas Malignant (Ganas)
+Precision: 0,98 | Recall: 0,98 | F1: 0,98
+Precision: 0,92 | Recall: 0,91 | F1: 0,91
+Metrik Kelas Benign (Jinak)
+Precision: 0,99 | Recall: 0,99 | F1: 0,99
+Precision: 0,94 | Recall: 0,95 | F1: 0,95
+Kesalahan Diagnosis Ganas (FN)
+1 kasus terlewat (dari 64 aktual)
+6 kasus terlewat (dari 64 aktual)
+
+3. Inti Kesimpulan
+Logistic Regression merupakan algoritma terbaik dalam eksperimen ini karena unggul jauh di seluruh metrik evaluasi (akurasi 98,83% berbanding 93,57%) dan hanya membuat 2 kesalahan prediksi dari 171 data uji [cite: 2, 3, 5]. Dalam diagnosis medis, keunggulan utamanya terletak pada tingginya nilai recall untuk kelas malignant (0,98), sehingga risiko pasien kanker ganas terdiagnosis jinak (false negative) dapat ditekan hingga hanya 1 kasus saja dibandingkan 6 kasus pada Random Forest [cite: 4, 5, 6].
+Sebagai catatan verifikasi, eksperimen di dalam file memiliki dua pembagian data berbeda untuk Logistic Regression (80:20 dan 70:30), belum menyertakan skor ROC-AUC pada perbandingan 70:30, serta menjalankan Random Forest tanpa penyetelan hiperparameter [cite: 3, 5].
