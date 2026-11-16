@@ -1,0 +1,37 @@
+Nama  : Kholiana Faoziah
+NIM   : B1C024033
+Kelas : Biologi Terapan B
+
+1. Source Code Python
+Eksperimen ini dibangun menggunakan bahasa pemrograman Python, diimplementasikan dalam bentuk Jupyter Notebook (berbasis Google Colab). Pustaka utama yang diimpor mencakup scikit-learn untuk pra-pemrosesan data, pemisahan dataset, algoritma Machine Learning (Logistic Regression dan Random Forest), dan evaluasi metrik; pandas serta numpy untuk manipulasi data numerik; dan matplotlib serta seaborn untuk keperluan visualisasi EDA dan Confusion Matrix.
+
+2. Hasil Pengujian Kedua Algoritma
+Setelah membagi dataset menjadi 70% data latih (training) dan 30% data uji (testing), kedua algoritma menunjukkan performa sebagai berikut:
+Logistic Regression: Mendapatkan hasil Akurasi sebesar 98.83% dengan skor ROC-AUC mencapai 0.9981.
+Random Forest: Mendapatkan hasil Akurasi sebesar 93.57% dengan skor ROC-AUC mencapai 0.9913.
+
+3. Perbandingan Accuracy, Precision, Recall, dan F1-Score
+Metrik Evaluasi
+Logistic Regression (Malignant / Benign)
+Random Forest (Malignant / Benign)
+Accuracy
+0.99 (98.83%)
+0.94 (93.57%)
+Precision
+0.98 / 0.99
+0.92 / 0.94
+Recall
+0.98 / 0.99
+0.91 / 0.95
+F1-Score
+0.98 / 0.99
+0.91 / 0.95
+
+
+4. Confusion Matrix
+Berdasarkan skenario klinis, kelas negatif didefinisikan sebagai Malignant (0) dan kelas positif sebagai Benign (1). Evaluasi Confusion Matrix berfokus pada upaya menekan angka False Negative (FN), yaitu kondisi di mana tumor ganas diprediksi salah sebagai tumor jinak. Jika melihat dari perbandingan metrik Recall untuk kelas Malignant (0.98 pada Logistic Regression berbanding 0.91 pada Random Forest), Logistic Regression menghasilkan tebakan salah yang jauh lebih sedikit, sehingga secara klinis jauh lebih dapat diandalkan dibandingkan Random Forest.
+
+5. Kesimpulan Hasil Eksperimen
+Performa Terbaik: Algoritma Logistic Regression terbukti menjadi model yang lebih superior untuk mengklasifikasikan Breast Cancer Wisconsin Dataset karena memimpin di seluruh metrik pengujian, baik Akurasi, Precision, Recall, maupun F1-Score dan ROC-AUC.
+Relevansi Metrik Klinis: Mengandalkan metrik "Akurasi" saja sangat berisiko dalam dunia medis akibat adanya kemungkinan kelas yang tidak seimbang. Kasus kesalahan diagnosis False Negative akan berakibat sangat fatal karena pasien penderita kanker ganas tidak akan menerima perawatan kritis.
+Rekomendasi Utama: Oleh karena itu, metrik Recall (Sensitivity) menjadi krusial. Logistic Regression direkomendasikan karena mencetak nilai Recall 0.98 untuk kelas tumor ganas (Malignant), memastikan hampir seluruh pasien yang benar-benar menderita kanker ganas terdeteksi dengan tepat.
