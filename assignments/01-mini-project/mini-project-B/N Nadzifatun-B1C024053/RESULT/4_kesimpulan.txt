@@ -1,0 +1,11 @@
+=========================================================
+4. KESIMPULAN HASIL EKSPERIMEN
+=========================================================
+1. Performa Model Terbaik:
+   Model Logistic Regression dengan normalisasi standardisasi fitur terbukti memberikan performa terbaik pada kasus klasifikasi ini dengan akurasi 98.83%, dibandingkan Random Forest yang memperoleh akurasi 93.57%.
+
+2. Batasan Metrik Akurasi pada Kasus Medis (Kanker):
+   Akurasi global saja tidak cukup untuk evaluasi model kanker payudara ini karena:
+   * Ketidakseimbangan data (Class Imbalance) berpotensi membiarkan model mengabaikan kelas minoritas berbahaya namun tetap mendapatkan persentase akurasi yang tinggi.
+   * Kesalahan False Negative (FN) memiliki risiko fatalitas tertinggi. Pasien kanker ganas yang didiagnosis salah sebagai tumor jinak (2 pada LR, 5 pada RF) dapat kehilangan kesempatan krusial untuk penanganan medis awal yang menyelamatkan nyawa.
+   * Oleh karena itu, dalam domain Biologi Terapan dan Diagnosis Klinis, evaluasi model wajib menitikberatkan pada perbaikan metrik Recall dan maksimalisasi F1-Score daripada mengandalkan akurasi murni.

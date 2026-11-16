@@ -1,0 +1,14 @@
+=========================================================
+3. CONFUSION MATRIX
+=========================================================
+- Logistic Regression (Akurasi 98.83%):
+  * [62] True Negative (TN): Kanker ganas terdeteksi ganas dengan benar.
+  * [0] False Positive (FP): Tumor jinak salah terdeteksi sebagai ganas.
+  * [2] False Negative (FN): Kanker ganas salah terdeteksi sebagai jinak (Sangat Berbahaya!).
+  * [107] True Positive (TP): Tumor jinak terdeteksi jinak dengan benar.
+
+- Random Forest (Akurasi 93.57%):
+  * [56] True Negative (TN): Kanker ganas terdeteksi ganas dengan benar.
+  * [6] False Positive (FP): Tumor jinak salah terdeteksi sebagai ganas.
+  * [5] False Negative (FN): Kanker ganas salah terdeteksi sebagai jinak (Sangat Berbahaya!).
+  * [104] True Positive (TP): Tumor jinak terdeteksi jinak dengan benar.
