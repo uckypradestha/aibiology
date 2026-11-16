@@ -1,10 +1,5 @@
 # Mini Assignment: Logistic Regression vs Random Forest (Klasifikasi Kanker)
 
-## Identitas Mahasiswa
-- Nama: Yulia Tasiyah
-- NIM: B1C024027
-- Kelas: [ISI KELAS]
-
 ## Deskripsi Eksperimen
 Membandingkan algoritma **Logistic Regression** dan **Random Forest Classifier** untuk klasifikasi kanker payudara
 menggunakan dataset *Breast Cancer Wisconsin (Diagnostic)* dari `sklearn.datasets.load_breast_cancer` (569 sampel, 30 fitur).
