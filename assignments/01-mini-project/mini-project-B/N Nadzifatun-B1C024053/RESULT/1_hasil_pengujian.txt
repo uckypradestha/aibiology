@@ -1,0 +1,12 @@
+=========================================================
+1. HASIL PENGUJIAN KEDUA ALGORITMA
+=========================================================
+Eksperimen menggunakan Breast Cancer Wisconsin Dataset dengan pembagian 70% data training (398 sampel) dan 30% data testing (171 sampel).
+
+- Logistic Regression (dengan Scaling):
+  * Sangat kuat untuk pola linear pada dataset fitur medis sel kanker.
+  * Menunjukkan tingkat error klasifikasi yang sangat rendah pada data uji.
+
+- Random Forest Classifier (100 Trees):
+  * Mampu memodelkan data non-linear dengan baik.
+  * Menghasilkan tingkat klasifikasi yang cukup akurat, namun rentan mengalami kesalahan prediksi (miss-classifications) yang sedikit lebih banyak pada dataset klinis ini.

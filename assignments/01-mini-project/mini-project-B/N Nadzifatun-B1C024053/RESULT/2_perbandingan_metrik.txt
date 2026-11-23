@@ -1,0 +1,18 @@
+=========================================================
+2. PERBANDINGAN ACCURACY, PRECISION, RECALL, DAN F1-SCORE
+=========================================================
+Berikut adalah ringkasan performa kedua model pada data pengujian (testing data):
+
+* Logistic Regression (LR):
+  - Accuracy: 98.83%
+  - Precision (Malignant / Ganas): 1.00 (100%)
+  - Recall (Malignant / Ganas): 0.97 (97%)
+  - F1-Score (Malignant / Ganas): 0.98 (98%)
+  - ROC AUC Score: 0.9984
+
+* Random Forest (RF):
+  - Accuracy: 93.57%
+  - Precision (Malignant / Ganas): 0.95 (95%)
+  - Recall (Malignant / Ganas): 0.88 (88%)
+  - F1-Score (Malignant / Ganas): 0.91 (91%)
+  - ROC AUC Score: 0.9883
