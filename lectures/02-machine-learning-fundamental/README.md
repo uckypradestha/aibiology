@@ -270,7 +270,7 @@ Untuk Clustering:
 
 ## Konsep Fundamental
 
-### 1 Train/Test Split
+### 1. Train/Test Split
 
 Model harus diuji pada data yang **belum pernah dilihat** saat training. Jika tidak, kita tidak tahu apakah model benar-benar belajar pola atau hanya menghafal.
 
@@ -285,7 +285,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 ```
 
-### 2 Overfitting dan Underfitting
+### 2. Overfitting dan Underfitting
 
 | Kondisi | Ciri | Penyebab Umum | Solusi |
 |---|---|---|---|
@@ -295,13 +295,13 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 > **Analogi:** mahasiswa yang hanya menghafal kunci jawaban latihan soal (overfitting) akan gagal ketika soal ujian berbeda.
 
-### 3 Bias-Variance Tradeoff
+### 3. Bias-Variance Tradeoff
 
 - **Bias tinggi**: model terlalu sederhana, asumsinya terlalu kuat (underfitting).
 - **Variance tinggi**: model terlalu sensitif terhadap data training (overfitting).
 - Tujuannya adalah menemukan **keseimbangan** keduanya.
 
-### 4 Cross-Validation (K-Fold)
+### 4. Cross-Validation (K-Fold)
 
 Satu kali split bisa kebetulan "beruntung" atau "sial", terutama pada dataset biologi yang kecil. **K-Fold CV** membagi data menjadi *k* bagian dan bergantian memakai satu bagian sebagai validasi.
 
@@ -321,7 +321,7 @@ scores = cross_val_score(model, X_train, y_train, cv=cv, scoring="roc_auc")
 print(f"ROC-AUC: {scores.mean():.3f} ± {scores.std():.3f}")
 ```
 
-### 5 Feature Scaling
+### 5. Feature Scaling
 
 Algoritma berbasis **jarak** atau **gradien** (KNN, SVM, Logistic Regression, K-Means, PCA) sensitif terhadap skala fitur. Misalnya `area` (ratusan) akan mendominasi `smoothness` (0.0x) jika tidak diskalakan.
 
@@ -329,7 +329,7 @@ Algoritma berbasis **jarak** atau **gradien** (KNN, SVM, Logistic Regression, K-
 - **MinMaxScaler**: rentang 0 sampai 1.
 - Algoritma berbasis pohon (Decision Tree, Random Forest) **tidak membutuhkan** scaling.
 
-### 6 Data Leakage (Kebocoran Data)
+### 6. Data Leakage (Kebocoran Data)
 
 Kesalahan fatal ketika informasi dari data test "bocor" ke proses training.
 
@@ -389,6 +389,8 @@ Dataset Iris memiliki:
 - 150 sampel bunga.
 - 4 fitur pengukuran.
 - 3 kelas spesies: Setosa, Versicolor, dan Virginica.
+
+Secara lengkap dapat dibuka pada [Iris KNN](https://colab.research.google.com/drive/1oyQCyrKJ67avhLGh7cBLBW5aJum-RaYr?usp=sharing)
 
 ### Import Libraries
 
