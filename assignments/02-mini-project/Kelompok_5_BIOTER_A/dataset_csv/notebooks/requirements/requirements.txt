@@ -1,0 +1,6 @@
+requirements
+numpy untuk pengolahan angka.
+pandas untuk pengolahan dataset.
+seaborn untuk visualisasi dan mengambil dataset.
+matplotlib untuk membuat grafik.
+scikit-learn untuk klasifikasi, preprocessing, PCA, dan clustering.
