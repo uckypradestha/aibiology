@@ -34,8 +34,7 @@ Secara lebih lengkap code dapat diakses melalui:
 | 9 | Evaluasi Akhir | Confusion matrix, kurva ROC, pengaruh *threshold* terhadap *recall* |
 | 10 | Interpretasi Model | *Permutation importance* |
 | 11 | Prediksi Pasien Baru | Simulasi prediksi satu pasien |
-| 12 | Soal Latihan | 7 soal bertingkat (dasar, menengah, lanjut) |
-| 13 | Catatan Etika | Keterbatasan data dan penggunaan model secara bertanggung jawab |
+| 12 | Catatan Etika | Keterbatasan data dan penggunaan model secara bertanggung jawab |
 
 ---
 
