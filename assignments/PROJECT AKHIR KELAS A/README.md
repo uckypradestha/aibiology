@@ -48,10 +48,10 @@ Dataset Pima memuat 768 perempuan keturunan suku Pima (usia ≥ 21 tahun), popul
 
 Kolom **Insulin** memiliki nilai nol terbanyak (**374 baris; 48,7%**), diikuti **SkinThickness** (227; 29,6%), BloodPressure (35; 4,6%), BMI (11; 1,4%), dan Glucose (5; 0,7%). Hasil yang melibatkan Insulin dan SkinThickness perlu ditafsirkan hati-hati.
 
-![Distribusi fitur](images/fig1_distribusi_fitur.png){width=88%}
+![Distribusi fitur](Result/fig1_distribusi_fitur.png)
 *Gambar 1. Distribusi fitur klinis (nilai 0 masih disertakan). Insulin paling miring; maksimum 846 µU/mL.*
 
-![Boxplot](images/fig2_boxplot.png){width=88%}
+![Boxplot](Result/fig2_boxplot.png)
 *Gambar 2. Perbandingan fitur antara pasien diabetes dan tidak diabetes. Glucose paling jelas berbeda.*
 
 Korelasi tertinggi terhadap diabetes: **Glucose (r = 0,47)**, BMI (0,29), Age (0,24). Pregnancies berkorelasi kuat dengan Age (r = 0,54).
@@ -77,12 +77,12 @@ Ketiga model jauh di atas baseline, tetapi selisih antarmodel (F1 hanya 0,007) l
 
 **ROC-AUC data uji = 0,810.** Confusion matrix: 80 TN, 20 FP, **28 FN**, 26 TP.
 
-![Confusion matrix dan ROC](images/fig4_confusion_roc.png){width=80%}
+![Confusion matrix dan ROC](Result/fig4_confusion_roc.png)
 *Gambar 3. Confusion matrix dan kurva ROC pada data uji.*
 
 ### 4.4 Pengaruh fitur
 
-![Pengaruh fitur](images/fig5_pengaruh_fitur.png){width=88%}
+![Pengaruh fitur](Result/fig5_pengaruh_fitur.png)
 *Gambar 4. Koefisien Logistic Regression (kiri) dan feature importance Random Forest (kanan).*
 
 | Fitur | Koef. LR | Imp. RF | Sesuai teori biologis? |
@@ -100,10 +100,10 @@ Ketiga model jauh di atas baseline, tetapi selisih antarmodel (F1 hanya 0,007) l
 
 PC1 menjelaskan 28,5% dan PC2 18,7% varians (**total 47,2%**). K = 2 dipilih (silhouette tertinggi, **0,196**; elbow tanpa tekukan tegas). **ARI = 0,161** terhadap status diabetes.
 
-![Elbow dan silhouette](images/fig6_elbow_silhouette.png){width=62%}
+![Elbow dan silhouette](Result/fig6_elbow_silhouette.png)
 *Gambar 5. Pemilihan K dengan metode elbow dan silhouette.*
 
-![PCA](images/fig7_pca_kmeans.png){width=72%}
+![PCA](Result/fig7_pca_kmeans.png)
 *Gambar 6. Proyeksi PCA berdasarkan status diabetes asli (kiri) dan klaster K-Means (kanan).*
 
 | Klaster | Tidak diabetes | Diabetes | Jumlah | Glucose | BMI | Age | Preg. |
